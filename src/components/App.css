@@ -1,0 +1,11 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: url(../assets/wrapperBackground.svg);
+  background-size: cover;
+}
