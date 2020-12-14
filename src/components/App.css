@@ -6,6 +6,6 @@
   height: 100vh;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  background: url(../assets/wrapperBackground.svg);
+  background: url(../assets/background.svg);
   background-size: cover;
 }
