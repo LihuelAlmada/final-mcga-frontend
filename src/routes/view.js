@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 //Single Components
 import Home from "../components/screens/Home/Home";
 import Login from "../components/screens/Home/Login/Login";
+import Register from "../components/signup/register.js";
+import store from "../redux/store/store";
 
 class Routes extends Component {
     render() {
@@ -13,6 +15,7 @@ class Routes extends Component {
           <Switch>
             <Route exact path="/home" component={Home} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
             <Redirect from="/" to="/home" />
           </Switch>
         </BrowserRouter>
