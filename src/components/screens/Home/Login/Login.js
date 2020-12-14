@@ -2,7 +2,7 @@ import "./login.css";
 import React, { Component } from "react";
 import { Formik, Form, Field } from "formik";
 import { connect } from "react-redux";
-import { logIn } from "../../redux/actions/login";
+import { logIn } from "../../../../redux/actions/login";
 import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
@@ -85,4 +85,17 @@ class Login extends Component {
   }
 }
 
-export default connect()(Login);
+const mapStateToProps = (state, ownProps) => {
+    return {
+      users: state.users,
+      isLoading: state.users.isLoading,
+      authentication: state.users.authentication,
+      failedLogin: state.users.failedLogin,
+    };
+};
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({ logIn }, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
+  
