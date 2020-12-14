@@ -11,8 +11,15 @@ class Home extends React.Component{
                         <h1 className="text1">Notes App</h1>
                         <h1 className="text2">Welcome</h1>
                     </div>          
-                    
-                    
+                    <div className="nav">
+                        <ul>
+                            <li>
+                                <Link className="login" to="/Login">
+                                Login
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         );

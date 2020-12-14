@@ -11,6 +11,7 @@ class Routes extends Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/home" component={Home} />
+            <Route exact path="/login" component={Login} />
             <Redirect from="/" to="/home" />
           </Switch>
         </BrowserRouter>
